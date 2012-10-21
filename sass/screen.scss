@@ -1,0 +1,52 @@
+// @mixin mq ($min-width: 500px){
+// 	@media all and (min-width: $min-width) {
+// 		@content;
+// 	}
+// }
+
+// @mixin small{
+// 	@include mq (200px) {
+// 		@content;
+// 	}
+// }
+
+// @mixin medium{
+// 	@include mq (500px) {
+// 		@content;
+// 	}
+// }
+
+// .example-element {
+// 	@include small {
+// 		background:red;
+// 	}
+// 	@include medium {
+// 		background:green;
+// 	}
+// }
+
+.example-element-1 {
+	background: salmon;
+}
+
+.example-element-2 {
+	background: rosybrown;
+}
+
+@media all and (min-width: 300px) {
+	.example-element-1 {
+		background: PaleGoldenRod ;
+	}
+	.example-element-2 {
+		background:SeaGreen ;
+	}
+}
+
+@media all and (min-width: 600px) {
+	.example-element-1 {
+		background:Turquoise ;
+	}
+	.example-element-2 {
+		background: SteelBlue ;
+	}
+}

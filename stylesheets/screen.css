@@ -1,0 +1,32 @@
+/* line 28, ../sass/screen.scss */
+.example-element-1 {
+  background: salmon;
+}
+
+/* line 32, ../sass/screen.scss */
+.example-element-2 {
+  background: rosybrown;
+}
+
+@media all and (min-width: 300px) {
+  /* line 37, ../sass/screen.scss */
+  .example-element-1 {
+    background: PaleGoldenRod;
+  }
+
+  /* line 40, ../sass/screen.scss */
+  .example-element-2 {
+    background: SeaGreen;
+  }
+}
+@media all and (min-width: 600px) {
+  /* line 46, ../sass/screen.scss */
+  .example-element-1 {
+    background: Turquoise;
+  }
+
+  /* line 49, ../sass/screen.scss */
+  .example-element-2 {
+    background: SteelBlue;
+  }
+}
