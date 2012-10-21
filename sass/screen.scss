@@ -1,17 +1,47 @@
-@mixin mq ($min-width: 600px){
-	@media all and (min-width: $min-width) {
-		@content;
+$small-max: 300px;
+$medium-max: 600px;
+
+$medium-min: $small-max + 1;
+$large-min: $medium-max + 1;
+
+@mixin mq ($max-width:"", $min-width:""){
+	@if($max-width!="" and $min-width!=""){
+		@media all and (min-width: $min-width) and (max-width: $max-width){
+			@content;
+		}
+	}
+	@else if ($max-width!=""){
+		@media all and (max-width: $max-width) {
+			@content;
+		}
+	}
+	@else if ($min-width!=""){
+		@media all and (min-width: $min-width) {
+			@content;
+		}
 	}
 }
 
 @mixin small{
-	@include mq (300px) {
+	@include mq ($max-width: $small-max) {
 		@content;
 	}
 }
 
 @mixin medium{
-	@include mq (600px) {
+	@include mq ($min-width: $medium-min) {
+		@content;
+	}
+}
+
+@mixin medium-only{
+	@include mq ($min-width: $medium-min, $max-width: $medium-max) {
+		@content;
+	}
+}
+
+@mixin large{
+	@include mq ($min-width: $large-min) {
 		@content;
 	}
 }
@@ -19,11 +49,11 @@
 .example-element-1 {
 	background: salmon;
 
-	@include small {
+	@include medium {
 		background: PaleGoldenRod ;
 	}
 
-	@include medium {
+	@include large {
 		background:Turquoise ;
 	}
 }
@@ -31,11 +61,11 @@
 .example-element-2 {
 	background: rosybrown;
 
-	@include small {
+	@include medium {
 		background:SeaGreen ;
 	}
 
-	@include medium {
+	@include large {
 		background: SteelBlue ;
 	}
 }
