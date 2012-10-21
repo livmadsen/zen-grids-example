@@ -1,26 +1,93 @@
+@import "mixins/zen";
+
+$zen-column-count: 9; // Set the total number of columns in the grid.
+$zen-gutter-width: 20px; // Set the gutter size. A half-gutter is used on each side of each column.
+
+body {
+	@include zen-grid-container;
+	text-align:center;
+}
+
 .example-element-1 {
-	@include small {
-		background: salmon;
-	}
-
-	@include medium {
-		background: paleGoldenRod ;
-	}
-
-	@include large {
-		background: turquoise ;
-	}
+	background-color: salmon;
+	@include zen-grid-item(9, 1);
 }
 
 .example-element-2 {
-	@include small {
-		background: rosybrown;
-	}
-	@include medium {
-		background: seaGreen ;
+	background: rosybrown;
+	@include zen-clear;
+
+	@include small{
+		@include zen-grid-item(9, 1);
 	}
 
-	@include large {
-		background: steelBlue ;
+	@include medium-only{
+		@include zen-grid-item(6, 4);
 	}
+
+	@include large{
+		@include zen-grid-item(5, 3);
+	}
+}
+.example-element-3 {
+	background: paleGoldenRod ;
+
+	@include small{
+		@include zen-clear;
+		@include zen-grid-item(9, 1);
+	}
+
+	@include medium-only{
+		@include zen-grid-item(3, 1);
+	}
+
+	@include large{
+		@include zen-grid-item(2, 1);
+	}
+}
+
+.example-element-4 {
+	background: seaGreen ;
+
+	@include small{
+		@include zen-clear;
+		@include zen-grid-item(9, 1);
+	}
+
+	@include medium-only{
+		@include zen-clear;
+		@include zen-grid-item(6, 1);
+	}
+
+	@include large{
+		@include zen-grid-item(2, 1, right);
+	}
+}
+
+.example-element-5 {
+	background: steelBlue ;
+
+	@include small{
+		@include zen-clear;
+		@include zen-grid-item(9, 1);
+	}
+
+	@include medium-only{
+		@include zen-grid-item(3, 7);
+	}
+	@include large{
+		@include zen-clear(right);
+		@include zen-grid-item(2, 1, right);
+	}
+}
+
+.element-number {
+	display:block;
+	font-size: 12rem;
+}
+
+.example-content {
+	background-color: rgba(255,255,255,.3);
+	text-align:left;
+	margin: 0;
 }
