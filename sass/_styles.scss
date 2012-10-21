@@ -1,0 +1,26 @@
+.example-element-1 {
+	@include small {
+		background: salmon;
+	}
+
+	@include medium {
+		background: paleGoldenRod ;
+	}
+
+	@include large {
+		background: turquoise ;
+	}
+}
+
+.example-element-2 {
+	@include small {
+		background: rosybrown;
+	}
+	@include medium {
+		background: seaGreen ;
+	}
+
+	@include large {
+		background: steelBlue ;
+	}
+}

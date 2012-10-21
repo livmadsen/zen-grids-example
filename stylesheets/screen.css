@@ -1,33 +1,37 @@
-/* line 49, ../sass/screen.scss */
-.example-element-1 {
-  background: salmon;
+@media all and (max-width: 300px) {
+  /* line 1, ../sass/_styles.scss */
+  .example-element-1 {
+    background: salmon;
+  }
 }
 @media all and (min-width: 301px) {
-  /* line 49, ../sass/screen.scss */
+  /* line 1, ../sass/_styles.scss */
   .example-element-1 {
-    background: PaleGoldenRod;
+    background: paleGoldenRod;
   }
 }
 @media all and (min-width: 601px) {
-  /* line 49, ../sass/screen.scss */
+  /* line 1, ../sass/_styles.scss */
   .example-element-1 {
-    background: Turquoise;
+    background: turquoise;
   }
 }
 
-/* line 61, ../sass/screen.scss */
-.example-element-2 {
-  background: rosybrown;
+@media all and (max-width: 300px) {
+  /* line 15, ../sass/_styles.scss */
+  .example-element-2 {
+    background: rosybrown;
+  }
 }
 @media all and (min-width: 301px) {
-  /* line 61, ../sass/screen.scss */
+  /* line 15, ../sass/_styles.scss */
   .example-element-2 {
-    background: SeaGreen;
+    background: seaGreen;
   }
 }
 @media all and (min-width: 601px) {
-  /* line 61, ../sass/screen.scss */
+  /* line 15, ../sass/_styles.scss */
   .example-element-2 {
-    background: SteelBlue;
+    background: steelBlue;
   }
 }

@@ -1,0 +1,23 @@
+@mixin small{
+	@include mq ($max-width: $small-max) {
+		@content;
+	}
+}
+
+@mixin medium{
+	@include mq ($min-width: $medium-min) {
+		@content;
+	}
+}
+
+@mixin medium-only{
+	@include mq ($min-width: $medium-min, $max-width: $medium-max) {
+		@content;
+	}
+}
+
+@mixin large{
+	@include mq ($min-width: $large-min) {
+		@content;
+	}
+}
