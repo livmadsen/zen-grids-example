@@ -1,25 +1,29 @@
+@mixin mq ($min-width){
+	@media all and (min-width: $min-width) {
+		@content;
+	}
+}
+
 .example-element-1 {
 	background: salmon;
+
+	@include mq(300px) {
+		background: PaleGoldenRod ;
+	}
+
+	@include mq(600px) {
+		background:Turquoise ;
+	}
 }
 
 .example-element-2 {
 	background: rosybrown;
-}
 
-@media all and (min-width: 300px) {
-	.example-element-1 {
-		background: PaleGoldenRod ;
-	}
-	.example-element-2 {
+	@include mq(300px) {
 		background:SeaGreen ;
 	}
-}
 
-@media all and (min-width: 600px) {
-	.example-element-1 {
-		background:Turquoise ;
-	}
-	.example-element-2 {
+	@include mq(600px) {
 		background: SteelBlue ;
 	}
 }
