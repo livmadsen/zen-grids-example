@@ -2,30 +2,31 @@
 .example-element-1 {
   background: salmon;
 }
-
-/* line 5, ../sass/screen.scss */
-.example-element-2 {
-  background: rosybrown;
-}
-
 @media all and (min-width: 300px) {
-  /* line 10, ../sass/screen.scss */
+  /* line 1, ../sass/screen.scss */
   .example-element-1 {
     background: PaleGoldenRod;
   }
+}
+@media all and (min-width: 600px) {
+  /* line 1, ../sass/screen.scss */
+  .example-element-1 {
+    background: Turquoise;
+  }
+}
 
+/* line 13, ../sass/screen.scss */
+.example-element-2 {
+  background: rosybrown;
+}
+@media all and (min-width: 300px) {
   /* line 13, ../sass/screen.scss */
   .example-element-2 {
     background: SeaGreen;
   }
 }
 @media all and (min-width: 600px) {
-  /* line 19, ../sass/screen.scss */
-  .example-element-1 {
-    background: Turquoise;
-  }
-
-  /* line 22, ../sass/screen.scss */
+  /* line 13, ../sass/screen.scss */
   .example-element-2 {
     background: SteelBlue;
   }
