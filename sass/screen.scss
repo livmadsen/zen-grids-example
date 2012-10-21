@@ -1,5 +1,17 @@
-@mixin mq ($min-width){
+@mixin mq ($min-width: 600px){
 	@media all and (min-width: $min-width) {
+		@content;
+	}
+}
+
+@mixin small{
+	@include mq (300px) {
+		@content;
+	}
+}
+
+@mixin medium{
+	@include mq (600px) {
 		@content;
 	}
 }
@@ -7,11 +19,11 @@
 .example-element-1 {
 	background: salmon;
 
-	@include mq(300px) {
+	@include small {
 		background: PaleGoldenRod ;
 	}
 
-	@include mq(600px) {
+	@include medium {
 		background:Turquoise ;
 	}
 }
@@ -19,11 +31,11 @@
 .example-element-2 {
 	background: rosybrown;
 
-	@include mq(300px) {
+	@include small {
 		background:SeaGreen ;
 	}
 
-	@include mq(600px) {
+	@include medium {
 		background: SteelBlue ;
 	}
 }
