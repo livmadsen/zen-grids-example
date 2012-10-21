@@ -1,30 +1,3 @@
-// @mixin mq ($min-width: 500px){
-// 	@media all and (min-width: $min-width) {
-// 		@content;
-// 	}
-// }
-
-// @mixin small{
-// 	@include mq (200px) {
-// 		@content;
-// 	}
-// }
-
-// @mixin medium{
-// 	@include mq (500px) {
-// 		@content;
-// 	}
-// }
-
-// .example-element {
-// 	@include small {
-// 		background:red;
-// 	}
-// 	@include medium {
-// 		background:green;
-// 	}
-// }
-
 .example-element-1 {
 	background: salmon;
 }
