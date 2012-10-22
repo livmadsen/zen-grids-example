@@ -3,3 +3,5 @@
 *.scssc
 
 sass/.DS_Store
+
+*.scssc
