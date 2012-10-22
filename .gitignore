@@ -1,7 +1,5 @@
-.sass-cache
+.sass-cache/*
 .DS-store
 *.scssc
-
-.sass-cache/d67f43ba1f3c00bdef73186ae9912051efac4b5d/screen.scssc
 
 sass/.DS_Store
