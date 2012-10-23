@@ -1,14 +1,18 @@
 @import "mixins/zen";
 
-$zen-column-count: 9; // Set the total number of columns in the grid.
-$zen-gutter-width: 20px; // Set the gutter size. A half-gutter is used on each side of each column.
+// $zen-auto-include-item-base: false;
+
+$zen-column-count: 9;
+$zen-gutter-width: 20px;
 
 body {
 	@include zen-grid-container;
 }
 
 .example-element {
-	padding: zen-half-gutter() inherit;
+	// @include zen-grid-item-base();
+	padding-top: zen-half-gutter();
+	padding-bottom: zen-half-gutter();
 	text-align:center;
 
 	@include small{
@@ -69,7 +73,7 @@ body {
 
 .example-element-5 {
 	background: steelBlue ;
-	
+
 	@extend .example-element;
 
 	@include medium-only{

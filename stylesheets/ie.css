@@ -1,20 +1,17 @@
-/* line 46, ../sass/mixins/_zen.scss */
 body:before, body:after {
   content: "";
   display: table;
 }
-/* line 50, ../sass/mixins/_zen.scss */
 body:after {
   clear: both;
 }
 
-/* line 10, ../sass/_styles.scss */
 .example-element, .example-element-1, .example-element-2, .example-element-3, .example-element-4, .example-element-5 {
-  padding: 10px inherit;
+  padding-top: 10px;
+  padding-bottom: 10px;
   text-align: center;
 }
 
-/* line 20, ../sass/_styles.scss */
 .example-element-1 {
   background-color: salmon;
   float: left;
@@ -30,7 +27,6 @@ body:after {
   word-wrap: break-word;
 }
 
-/* line 27, ../sass/_styles.scss */
 .example-element-2 {
   background: rosybrown;
   clear: left;
@@ -47,7 +43,6 @@ body:after {
   word-wrap: break-word;
 }
 
-/* line 41, ../sass/_styles.scss */
 .example-element-3 {
   background: paleGoldenRod;
   float: left;
@@ -63,7 +58,6 @@ body:after {
   word-wrap: break-word;
 }
 
-/* line 55, ../sass/_styles.scss */
 .example-element-4 {
   background: seaGreen;
   clear: left;
@@ -80,7 +74,6 @@ body:after {
   word-wrap: break-word;
 }
 
-/* line 70, ../sass/_styles.scss */
 .example-element-5 {
   background: steelBlue;
   float: left;
@@ -96,13 +89,11 @@ body:after {
   word-wrap: break-word;
 }
 
-/* line 84, ../sass/_styles.scss */
 .element-number {
   display: block;
   font-size: 12em;
 }
 
-/* line 89, ../sass/_styles.scss */
 .example-content {
   background-color: rgba(255, 255, 255, 0.3);
   text-align: left;
