@@ -1,7 +1,3 @@
-/* line 6, ../sass/_styles.scss */
-body {
-  text-align: center;
-}
 /* line 46, ../sass/mixins/_zen.scss */
 body:before, body:after {
   content: "";
@@ -12,7 +8,30 @@ body:after {
   clear: both;
 }
 
-/* line 11, ../sass/_styles.scss */
+/* line 10, ../sass/_styles.scss */
+.example-element, .example-element-1, .example-element-2, .example-element-3, .example-element-4, .example-element-5 {
+  padding: 10px inherit;
+  text-align: center;
+}
+@media all and (max-width: 500px) {
+  /* line 10, ../sass/_styles.scss */
+  .example-element, .example-element-1, .example-element-2, .example-element-3, .example-element-4, .example-element-5 {
+    clear: left;
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+}
+
+/* line 20, ../sass/_styles.scss */
 .example-element-1 {
   background-color: salmon;
   float: left;
@@ -28,29 +47,13 @@ body:after {
   word-wrap: break-word;
 }
 
-/* line 16, ../sass/_styles.scss */
+/* line 27, ../sass/_styles.scss */
 .example-element-2 {
   background: rosybrown;
   clear: left;
 }
-@media all and (max-width: 300px) {
-  /* line 16, ../sass/_styles.scss */
-  .example-element-2 {
-    float: left;
-    width: 100%;
-    margin-left: 0%;
-    margin-right: -100%;
-    padding-left: 10px;
-    padding-right: 10px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    word-wrap: break-word;
-  }
-}
-@media all and (min-width: 301px) and (max-width: 600px) {
-  /* line 16, ../sass/_styles.scss */
+@media all and (min-width: 501px) and (max-width: 900px) {
+  /* line 27, ../sass/_styles.scss */
   .example-element-2 {
     float: left;
     width: 66.66667%;
@@ -65,8 +68,8 @@ body:after {
     word-wrap: break-word;
   }
 }
-@media all and (min-width: 601px) {
-  /* line 16, ../sass/_styles.scss */
+@media all and (min-width: 901px) {
+  /* line 27, ../sass/_styles.scss */
   .example-element-2 {
     float: left;
     width: 55.55556%;
@@ -82,29 +85,12 @@ body:after {
   }
 }
 
-/* line 32, ../sass/_styles.scss */
+/* line 41, ../sass/_styles.scss */
 .example-element-3 {
   background: paleGoldenRod;
 }
-@media all and (max-width: 300px) {
-  /* line 32, ../sass/_styles.scss */
-  .example-element-3 {
-    clear: left;
-    float: left;
-    width: 100%;
-    margin-left: 0%;
-    margin-right: -100%;
-    padding-left: 10px;
-    padding-right: 10px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    word-wrap: break-word;
-  }
-}
-@media all and (min-width: 301px) and (max-width: 600px) {
-  /* line 32, ../sass/_styles.scss */
+@media all and (min-width: 501px) and (max-width: 900px) {
+  /* line 41, ../sass/_styles.scss */
   .example-element-3 {
     float: left;
     width: 33.33333%;
@@ -119,8 +105,8 @@ body:after {
     word-wrap: break-word;
   }
 }
-@media all and (min-width: 601px) {
-  /* line 32, ../sass/_styles.scss */
+@media all and (min-width: 901px) {
+  /* line 41, ../sass/_styles.scss */
   .example-element-3 {
     float: left;
     width: 22.22222%;
@@ -136,29 +122,12 @@ body:after {
   }
 }
 
-/* line 49, ../sass/_styles.scss */
+/* line 55, ../sass/_styles.scss */
 .example-element-4 {
   background: seaGreen;
 }
-@media all and (max-width: 300px) {
-  /* line 49, ../sass/_styles.scss */
-  .example-element-4 {
-    clear: left;
-    float: left;
-    width: 100%;
-    margin-left: 0%;
-    margin-right: -100%;
-    padding-left: 10px;
-    padding-right: 10px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    word-wrap: break-word;
-  }
-}
-@media all and (min-width: 301px) and (max-width: 600px) {
-  /* line 49, ../sass/_styles.scss */
+@media all and (min-width: 501px) and (max-width: 900px) {
+  /* line 55, ../sass/_styles.scss */
   .example-element-4 {
     clear: left;
     float: left;
@@ -174,8 +143,8 @@ body:after {
     word-wrap: break-word;
   }
 }
-@media all and (min-width: 601px) {
-  /* line 49, ../sass/_styles.scss */
+@media all and (min-width: 901px) {
+  /* line 55, ../sass/_styles.scss */
   .example-element-4 {
     float: right;
     width: 22.22222%;
@@ -191,29 +160,12 @@ body:after {
   }
 }
 
-/* line 67, ../sass/_styles.scss */
+/* line 70, ../sass/_styles.scss */
 .example-element-5 {
   background: steelBlue;
 }
-@media all and (max-width: 300px) {
-  /* line 67, ../sass/_styles.scss */
-  .example-element-5 {
-    clear: left;
-    float: left;
-    width: 100%;
-    margin-left: 0%;
-    margin-right: -100%;
-    padding-left: 10px;
-    padding-right: 10px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    word-wrap: break-word;
-  }
-}
-@media all and (min-width: 301px) and (max-width: 600px) {
-  /* line 67, ../sass/_styles.scss */
+@media all and (min-width: 501px) and (max-width: 900px) {
+  /* line 70, ../sass/_styles.scss */
   .example-element-5 {
     float: left;
     width: 33.33333%;
@@ -228,8 +180,8 @@ body:after {
     word-wrap: break-word;
   }
 }
-@media all and (min-width: 601px) {
-  /* line 67, ../sass/_styles.scss */
+@media all and (min-width: 901px) {
+  /* line 70, ../sass/_styles.scss */
   .example-element-5 {
     clear: right;
     float: right;

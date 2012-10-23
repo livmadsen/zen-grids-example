@@ -5,21 +5,30 @@ $zen-gutter-width: 20px; // Set the gutter size. A half-gutter is used on each s
 
 body {
 	@include zen-grid-container;
+}
+
+.example-element {
+	padding: zen-half-gutter() inherit;
 	text-align:center;
+
+	@include small{
+		@include zen-clear;
+		@include zen-grid-item(9, 1);
+	}
 }
 
 .example-element-1 {
 	background-color: salmon;
+
+	@extend .example-element;
 	@include zen-grid-item(9, 1);
 }
 
 .example-element-2 {
 	background: rosybrown;
-	@include zen-clear;
 
-	@include small{
-		@include zen-grid-item(9, 1);
-	}
+	@extend .example-element;
+	@include zen-clear;
 
 	@include medium-only{
 		@include zen-grid-item(6, 4);
@@ -32,10 +41,7 @@ body {
 .example-element-3 {
 	background: paleGoldenRod ;
 
-	@include small{
-		@include zen-clear;
-		@include zen-grid-item(9, 1);
-	}
+	@extend .example-element;
 
 	@include medium-only{
 		@include zen-grid-item(3, 1);
@@ -49,10 +55,7 @@ body {
 .example-element-4 {
 	background: seaGreen ;
 
-	@include small{
-		@include zen-clear;
-		@include zen-grid-item(9, 1);
-	}
+	@extend .example-element;
 
 	@include medium-only{
 		@include zen-clear;
@@ -66,11 +69,8 @@ body {
 
 .example-element-5 {
 	background: steelBlue ;
-
-	@include small{
-		@include zen-clear;
-		@include zen-grid-item(9, 1);
-	}
+	
+	@extend .example-element;
 
 	@include medium-only{
 		@include zen-grid-item(3, 7);
