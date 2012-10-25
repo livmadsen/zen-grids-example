@@ -1,0 +1,1 @@
+This is an example showing a simple zen-grid at different breakpoints with a mq-enabled css and a no-mq fallback css for ie, using Sass mixin content blocks. The mq-mixins are not super elegant, and can totally be improved, but I hope it's fairly clear what's going on.
