@@ -1,6 +1,6 @@
 @import "mixins/zen";
 
-// $zen-auto-include-item-base: false;
+$zen-auto-include-item-base: false;
 
 $zen-column-count: 9;
 $zen-gutter-width: 20px;
@@ -10,7 +10,7 @@ body {
 }
 
 .example-element {
-	// @include zen-grid-item-base();
+	@include zen-grid-item-base();
 	padding-top: zen-half-gutter();
 	padding-bottom: zen-half-gutter();
 	text-align:center;

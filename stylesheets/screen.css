@@ -7,6 +7,13 @@ body:after {
 }
 
 .example-element, .example-element-1, .example-element-2, .example-element-3, .example-element-4, .example-element-5 {
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: center;
@@ -18,13 +25,6 @@ body:after {
     width: 100%;
     margin-left: 0%;
     margin-right: -100%;
-    padding-left: 10px;
-    padding-right: 10px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    word-wrap: break-word;
   }
 }
 
@@ -34,13 +34,6 @@ body:after {
   width: 100%;
   margin-left: 0%;
   margin-right: -100%;
-  padding-left: 10px;
-  padding-right: 10px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-  word-wrap: break-word;
 }
 
 .example-element-2 {
@@ -53,13 +46,6 @@ body:after {
     width: 66.66667%;
     margin-left: 33.33333%;
     margin-right: -100%;
-    padding-left: 10px;
-    padding-right: 10px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    word-wrap: break-word;
   }
 }
 @media all and (min-width: 901px) {
@@ -68,13 +54,6 @@ body:after {
     width: 55.55556%;
     margin-left: 22.22222%;
     margin-right: -100%;
-    padding-left: 10px;
-    padding-right: 10px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    word-wrap: break-word;
   }
 }
 
@@ -87,13 +66,6 @@ body:after {
     width: 33.33333%;
     margin-left: 0%;
     margin-right: -100%;
-    padding-left: 10px;
-    padding-right: 10px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    word-wrap: break-word;
   }
 }
 @media all and (min-width: 901px) {
@@ -102,13 +74,6 @@ body:after {
     width: 22.22222%;
     margin-left: 0%;
     margin-right: -100%;
-    padding-left: 10px;
-    padding-right: 10px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    word-wrap: break-word;
   }
 }
 
@@ -122,13 +87,6 @@ body:after {
     width: 66.66667%;
     margin-left: 0%;
     margin-right: -100%;
-    padding-left: 10px;
-    padding-right: 10px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    word-wrap: break-word;
   }
 }
 @media all and (min-width: 901px) {
@@ -137,13 +95,6 @@ body:after {
     width: 22.22222%;
     margin-right: 0%;
     margin-left: -100%;
-    padding-left: 10px;
-    padding-right: 10px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    word-wrap: break-word;
   }
 }
 
@@ -156,13 +107,6 @@ body:after {
     width: 33.33333%;
     margin-left: 66.66667%;
     margin-right: -100%;
-    padding-left: 10px;
-    padding-right: 10px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    word-wrap: break-word;
   }
 }
 @media all and (min-width: 901px) {
@@ -172,13 +116,6 @@ body:after {
     width: 22.22222%;
     margin-right: 0%;
     margin-left: -100%;
-    padding-left: 10px;
-    padding-right: 10px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    word-wrap: break-word;
   }
 }
 
